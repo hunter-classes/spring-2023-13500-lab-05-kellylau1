@@ -39,9 +39,9 @@ TEST_CASE("isTwinPrime") {
 
 TEST_CASE("nextTwinPrime") {
   CHECK(nextTwinPrime(17) == 19);
-  CHECK(isTwinPrime(29) == 31);
-  CHECK(isTwinPrime(3) == 5);
-  CHECK(isTwinPrime(7) == 11);
+  CHECK(nextTwinPrime(29) == 31);
+  CHECK(nextTwinPrime(3) == 5);
+  CHECK(nextTwinPrime(7) == 11);
 }
 
 TEST_CASE("largestTwinPrime") {

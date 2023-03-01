@@ -1,8 +1,10 @@
-main: main.o funcs.o
-	g++ -std=c++11 -o main main.o funcs.o
+CXXFLAGS +=-std=c++11
 
-tests: tests.o funcs.o
-	g++ -std=c++11 -o tests tests.o funcs.o
+main: main.o funcs.o
+	g++ -o main main.o funcs.o
+
+tests: funcs.o tests.o
+	g++ -o tests tests.o funcs.o
 
 
 
